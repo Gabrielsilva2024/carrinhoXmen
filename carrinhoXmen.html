@@ -1,0 +1,119 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras - GeekComic</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .produto {
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+        }
+        .produto img {
+            max-width: 150px;
+            height: auto;
+        }
+        .produto-info {
+            flex: 1;
+            padding-left: 20px;
+        }
+        .produto-preco {
+            font-size: 1.2em;
+            color: #333;
+        }
+        footer {
+            background-color: rgb(72, 76, 80);
+            color: #fff;
+            text-align: center;
+            font-size: 14px;
+            padding: 10px;
+        }
+        .container2 {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+        }
+        input {
+            margin-bottom: 10px;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #333;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Carrinho de Compras</h1>
+    </header>
+    <div class="container">
+        <div class="produto">
+            <img src="https://nerdaocubo.com.br/cdn/shop/files/N3083TS001.png?v=1700774952&width=360" alt="X-Men">
+            <div class="produto-info">
+                <h2>X-Men</h2>
+                </h2>
+                <p class="produto-preco">R$ 64,99</p>
+            </div>
+            <button>Remover</button>
+        </div>
+    </div>
+    <div class="container2">
+    <form class="input">
+        <label>Digite seu CPF:</label>
+        <input type="number" name="CPF" required>
+        <label>Digite o CVC do seu cartão:</label>
+        <input type="number" name="CVC" required>
+        <label>Digite os números do seu cartão:</label>
+        <input type="number" name="NUMERO_CARTAO" required>
+        <label>Digite a data de validade:</label>
+        <input type="number" name="DATA_VALIDADE" required>
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+    <footer>
+        <p>&copy; 2024 GeekComic. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
